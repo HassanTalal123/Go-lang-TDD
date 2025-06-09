@@ -1,0 +1,32 @@
+git clone https://github.com/HassanTalal123/Go-lang-TDD.git
+
+git status
+
+git add .
+
+git config --global user.email "muhammadhassanahman.bscsf21@iba-suk.edu.pk"
+
+git config --global user.name "HassanTalal123"
+
+git commit -m"first commint initialized" // to commit a change and comment
+
+git push origin main
+
+git branch
+
+git checkout -b Day1_Hello_World
+
+git branch 
+
+cd Go-lang-TDD
+
+go mod init 
+
+cd .. 
+
+go mod init GO-LANG-TDD
+
+cd Hello_World
+
+go run . 
+
