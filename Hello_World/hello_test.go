@@ -1,12 +1,18 @@
 package main
 
-import "testing"
+import (
+	"testing"
+
+	. "github.com/smartystreets/goconvey/convey"
+)
 
 func TestHello(t *testing.T) {
-	got := Hello()
-	want := "Hello, world"
+	Convey("When calling Hello", t, func() {
+		got := Hello()
+		want := "Hello, world"
 
-	if got != want {
-		t.Errorf("got %q want %q", got, want)
-	}
+		Convey("It should return 'Hello, world'", func() {
+			So(got, ShouldEqual, want)
+		})
+	})
 }
